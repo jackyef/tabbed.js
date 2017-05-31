@@ -1,0 +1,31 @@
+body
+{
+    padding: 1em;
+}
+
+tabbed-custom-header{
+    display: none;
+}
+
+.tabbed{
+
+}
+
+.tabbed-btn{
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 50% 50% 0 0;
+    padding: .2em 1em .2em 1em;
+    outline: none;
+}
+.tabbed-btn-active{
+    filter: brightness(120%);
+}
+.tabbed-nav{
+
+}
+.tabbed-div{
+    padding: 1em;
+    border: 1px solid lightgray;
+    box-shadow: 0 8px 10px -9px black;
+}
