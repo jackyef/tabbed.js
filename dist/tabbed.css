@@ -1,17 +1,9 @@
-body{
-    padding: 1em;
-}
-.mContainer {
-    padding: 0 1em 0 1em;
-}
 tabbed-custom-header{
     display: none;
 }
-
 .tabbed{
 
 }
-
 .tabbed-btn{
     background-color: lightgray;
     border: 1px solid lightgray;
@@ -29,17 +21,4 @@ tabbed-custom-header{
     padding: 1em;
     border: 1px solid lightgray;
     box-shadow: 0 8px 10px -9px black;
-}
-
-.social-buttons>a { 
-  text-decoration: none;
-  color:white;
-}
-.social-buttons>a:hover { 
-  text-decoration: none;
-  color: white !important;
-  filter: brightness(120%);
-}
-.footer{
-    float:right;
 }
