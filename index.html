@@ -1,0 +1,74 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="tabbed.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body> 
+  <h1> tabbed.js </h1>
+  by <a href="https://github.com/jackyef">jackyef</a>
+  <hr />
+  <h2>Too many divs?</h2>
+  Say, you have 4 divs inside this div.
+  This is how it looks without applying the class .tabbed
+  <div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+  <hr/>
+  <h2>Put them in their own tabs!</h2>
+  This is how it looks with applying the class .tabbed
+  <br/><br/>
+  <div class="tabbed">
+    <div data-tabname="tab1">It's very simple</div>
+    <div data-tabname="tab2">Just give the class <code>.tabbed</code> to the parent element..</div>
+    <div data-tabname="tab3">..and give each divs that needs to be tabbed a <code>data-tabname</code> attribute</div>
+    <br/>
+    <div>For example, this div won't be tabbed because it doesn't have the data-tabname attribute.</div>
+    <br/>
+    Just remember to give each divs an unique <code>data-tabname</code> attribute.
+
+  </div>
+
+  <hr/>
+  <h2>Simple, lightweight, flexible!</h2>
+  <p>As this plugin focuses primarily on getting a tabbed interface, it won't mess with each of the divs styling. 
+  You can still style them individually. For example, you can even apply bootstrap classes to the divs.</p>
+  <br/>
+  <div class="tabbed">
+    <div data-tabname="Red div" class="bg-danger">
+      <code>&lt;div&gt; data-tabname="Red div" class="bg-danger">&lt;/div&gt;</code>
+    </div>
+    <div data-tabname="Green div" class="bg-success">
+      <code>&lt;div&gt; data-tabname="Green div" class="bg-success">&lt;/div&gt;</code>
+    </div>
+    <div data-tabname="Blue div" class="bg-info">
+      <code>&lt;div&gt; data-tabname="Blue div" class="bg-info">&lt;/div&gt;</code>
+    </div>
+    <div data-tabname="Div with custom tab header" class="bg-primary">
+      <tabbed-custom-header>Custom header <span class="fa fa-plus"></span></tabbed-custom-header>
+      The tab header doesn't always have to be the same as the <code>data-tabname</code> attribute! You can define a custom
+      one yourself. Check the following code that uses a fontawesome icon in the header. <br/>
+      <code>
+            &lt;div&gt; data-tabname="Div with custom tab header" class="bg-primary"&gt;<br/>
+            &nbsp;&nbsp;&lt;tabbed-custom-header&gt;&lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;&lt;/tabbed-custom-header&gt;<br/>
+            &lt;/div&gt;
+      </code>
+    </div>
+  </div>
+  <hr/>
+  <h2>How to style it?</h2>
+  <p>
+    In the CSS file, you will find the classes this plugin uses. You can style them however you want! (hint: there are only 5)
+    <br/>
+    The default style can be changed to your heart content.
+  </p>
+  <script src="tabbed.js"></script>
+</body>
+</html>
